@@ -3,7 +3,7 @@
 <div style="height: 50px;" ></div>
 <div class="container">
 	<div class="row">
-    <h3 class="col-12" style="color: #fff;"><?php echo $linha['nome']; ?></h3>
+    <h3 class="col-12" style="color: #fff;"><?php echo $linha['biografia']; ?></h3>
 		<div class="col-4">
 			<img style="width:300px;" src="assets/morena1.jpg" class="rounded" alt="...">
   		</div>		
@@ -13,9 +13,9 @@
 			</p>
 		</div>
 	</div>
-</div>
+
 <div style="height:50px"></div>	
-<div class="container">
+
 	<div class="row">
 		<div class="col-sm-3 ">
 		  <div class="card" style="width: 15rem; ">
@@ -54,6 +54,7 @@
     </div>
   </div>	
 	</div>
+
 </div>
 <br><br>
 

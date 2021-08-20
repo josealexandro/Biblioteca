@@ -29,8 +29,8 @@
 </div><br>
 <div class="container">
 <div class="row pb-5">
-  <div class="col-sm-3 ">
-    <div class="card " style="width: 15rem; ">
+  <div class="xs-3 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+    <div class="card mb-4" style="width: 15rem; ">
       <img src="assets/morena1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
@@ -39,8 +39,8 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-3">
-    <div class="card" style="width: 15rem; ">
+  <div class="xs-3 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+    <div class="card mb-4" style="width: 15rem; ">
       <img src="assets/morena2.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
@@ -49,7 +49,7 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-3">
+  <div class="xs-3 col-sm-6 col-md-5 col-lg-4 col-xl-3">
     <div class="card" style="width: 15rem;">
       <img src="assets/morena1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -59,7 +59,7 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-3">
+  <div class="xs-3 col-sm-6 col-md-5 col-lg-4 col-xl-3">
     <div class="card" style="width: 15rem;">
       <img src="assets/morena2.jpg" class="card-img-top" alt="...">
       <div class="card-body">

@@ -20,7 +20,7 @@
 
       Require_once ("conexao.php");
 
-      $sql = "SELECT * FROM autoras where nome LIKE '%$pesquisa%'";
+      $sql = "SELECT * FROM perfil where descricao LIKE '%$pesquisa%'";
 
       $dados = mysqli_query($conn, $sql);
       ?>
@@ -34,53 +34,33 @@
               
                   <nav class="navbar navbar-light bg-light">
                     <form class="form-inline" action="pesquisa.php" method="post">
-                      <input class="form-control mr-sm-2" type="search" placeholder="Digite aqui" aria-label="Search" name="busca" autofocus>
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                      <input class="form-control mr-sm-2 mb-2" type="search" placeholder="Digite aqui" aria-label="Search" name="busca" autofocus>
+                      <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Buscar</button>
                     </form>
                   </nav>
                   <table class="table table-hover">
                     <thead>
                       <tr>
-                        <th scope="col">Nome</th>
-                        <th scope="col">Biografia</th>
-                        <th scope="col">Foto</th>
-                        <th scope="col">Datade nascimento</th>
-                        <th scope="col">Data da morte</th>
-                        <th scope="col">Instagram</th>
-                        <th scope="col">Facebook</th>
-                        <th scope="col">Twiter</th>
-                        <th scope="col">Site da autora</th>
-                        <th scope="col">Funções</th>
+                        <th scope="col">Descrição</th>
+                        
                       </tr>
                     </thead>
                     <tbody>
                          <?php
                          while ($linha = mysqli_fetch_assoc($dados) ) {
-                            $cod_autora = $linha['cod_autora'];
-                            $nome = $linha['nome'];
-                            $biografia = $linha['biografia'];
-                            $foto = $linha['foto'];
-                            $data_nasc = $linha['data_nasc'];
-                            $data_morte = $linha['data_morte'];
-                            $instagran = $linha['instagram'];
-                            $facebook = $linha['facebook'];
-                            $twiter = $linha['twitter'];
-                            $site_autora = $linha['site_autora'];
+                            $cod_perfil = $linha['cod_perfil'];
+                            $descricao = $linha['descricao'];
+                            
+                            
                             
 
                             echo "<tr>
-                                    <th scope='row'>$nome</th>
-                                    <td>$biografia</td>
-                                    <td>$foto</td>
-                                    <td>$data_nasc</td>
-                                    <td>$data_morte</td>
-                                    <td>$instagran</td>
-                                    <td>$facebook</td>
-                                    <td>$twiter</td>
-                                    <td>$site_autora</td>
+                                    <th scope='row'>$descricao</th>
+                                    
+                                    
                                     <td width=150px>
-                                    <a href='cadastro_edit.php?id=$cod_autora' class='btn btn-success btn-sm'>Editar</a>
-                                    <a href='#' class='btn btn-danger btn-sm' data-toggle='modal' data-target= '#confirma' onclick=" .'"' ."pegar_dados($cod_autora, '$nome')" .'"' .">Excluir</a>
+                                    <a href='cadastro_edit.php?id=$cod_perfil' class='btn btn-success btn-sm'>Editar</a>
+                                    <a href='#' class='btn btn-danger btn-sm' data-toggle='modal' data-target= '#confirma' onclick=" .'"' ."pegar_dados($cod_perfil, '$descricao')" .'"' .">Excluir</a>
                                     </td>
                                   </tr>";
                            }
@@ -106,13 +86,13 @@
               </button>
             </div>
             <div class="modal-body">
-              <form action="excluir_script.php" method="POST">
-                  <p>Deseja realmente excluir <b id="nome_autora">Nome da autora</b>?</p>
+              <form action="excluir.php" method="POST">
+                  <p>Deseja realmente excluir <b id="nome">Descrição</b>?</p>
                   
             </div>
             <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
-                  <input type="hidden" name="id" id="cod_pessoa" value="">
+                  <input type="hidden" name="id" id="cod_perfil" value="">
                   <input type="submit" class="btn btn-danger" value="sim">
               </form>
             </div>
@@ -122,8 +102,8 @@
 
       <script type="text/javascript">
         function pegar_dados(id, nome) {
-          document.getElementById('nome_autora').innerHTML = nome;
-          document.getElementById('cod_pessoa').value = id;
+          document.getElementById('nome').innerHTML = nome;
+          document.getElementById('cod_perfil').value = id;
         }
       </script>
 

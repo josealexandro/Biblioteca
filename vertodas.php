@@ -1,50 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Biblioteca</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <div class="container-fluid ">
-    <a class="navbar-brand " href="#">Biblioteca</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Colaborar</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Colaborar</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-</div><br>
+<?php include './includs/header.php'; ?>
+
 <div style="height: 100px; "></div>
 <div class="container">
 <div class="row p-8">
@@ -74,7 +29,7 @@
                             $site_autora = $linha['site_autora'];
 
       ?>
-  <div class="col-sm-3 ">
+  <div class=" xs-3 col-sm-6 col-md-5 col-lg-4 col-xl-3 ">
     <div class="card" style="width: 15rem; ">
       <img src="assets/morena1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -93,7 +48,9 @@
 <div class="container">
   <div class="row">
     
-      <button type="button" class="btn btn-outline-secondary me-auto btn-block">Ver todas</button>
+      <button style="width: 200px; background: black; color: #fff; margin: auto;"
+      type="button" 
+      class="btn btn-outline-secondary me-auto btn-block">Ver todas</button>
     
   </div>
 </div>
@@ -101,7 +58,7 @@
 
 <div class="container">
 <div class="row p-8">
-  <div class="col-sm-3 ">
+  <div class="xs-3 col-sm-6 col-md-5 col-lg-4 col-xl-3">
     <div class="card" style="width: 15rem; ">
       <img src="assets/obra1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -109,7 +66,7 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-3 ">
+  <div class="xs-3 col-sm-6 col-md-5 col-lg-4 col-xl-3 ">
     <div class="card" style="width: 15rem; ">
       <img src="assets/obra2.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -117,7 +74,7 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-3">
+  <div class="xs-3 col-sm-6 col-md-5 col-lg-4 col-xl-3">
     <div class="card" style="width: 15rem;">
       <img src="assets/obra3.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -125,7 +82,7 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-3">
+  <div class="xs-3 col-sm-6 col-md-5 col-lg-4 col-xl-3">
     <div class="card" style="width: 15rem;">
       <img src="assets/obra4.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -139,51 +96,19 @@
 <div class="container">
   <div class="row">
     
-      <button type="button" class="btn btn-outline-secondary me-auto btn-block">Ver todas</button>
+      <button style="width: 200px; background: black; color: #fff; margin: auto;" type="button" 
+      class="btn btn-outline-secondary me-auto btn-block">
+      Ver todas</button>
     
   </div>
 </div>
 
+
+
 <br><br><br>
 
-<footer class="container-fluid text-white bg-dark">
-    <div class="row pt-5 pb-5">
-      <section class="col-md-5">
-        <h5>Album</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white">Baby</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white">Models</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link text-white">Family</a>
-          </li>
-        </ul>
-      </section>
 
-      <section class="col-md-5">
-        <h5>Contato</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a href="tel:+5513111111111" class="nav-link text-white">Tel: (13) 9 9999-9999</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://api.whatsapp.com/send?phone=5513999999999&text=Quero%20saber%20mais%20sobre%20o%20Curso!"
-              target="_blank" class="nav-link text-white">WhatsApp:
-              (13) 9 9999-9999
-            </a>
-          </li>
-        </ul>
-      </section>
-      
-
-      <section>
-        <a href="#" class="text-white">Voltar ao Top!</a>
-      </section>
-    </div>
-  </footer>
+<?php include 'includs/footer.php'; ?>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 

@@ -63,18 +63,18 @@
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase">Links</h5>
 
-          <ul class="list-unstyled mb-0">
+          <ul class="list-unstyled  mb-0">
             <li>
-              <a href="#!" class="text-white">Link 1</a>
+              <a href="https://www.ifsertao-pe.edu.br/" class="text-white text-decoration-none">IF Sertão</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 2</a>
+              <a href="#!" class="text-white text-decoration-none">Contato</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 3</a>
+              <a href="#!" class="text-white text-decoration-none">Contribuir</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 4</a>
+              <a href="#!" class="text-white text-decoration-none">Link 4</a>
             </li>
           </ul>
         </div>
@@ -82,20 +82,7 @@
 
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a href="https://www.ifsertao-pe.edu.br/" class="text-white">Instituto</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 3</a>
-            </li>
-            
-          </ul>
+          
         </div>
         <!--Grid column-->
 
